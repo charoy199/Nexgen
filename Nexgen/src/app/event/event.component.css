@@ -1,0 +1,134 @@
+/* General Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.logo .highlight {
+    color: #7848F4;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:first-child {
+    color: #000; /* Black color for Login */
+}
+
+.signup-btn {
+    padding: 8px 16px;
+    background-color: #7848F4;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Event Info Section */
+.event-info {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Left Side: Event Details */
+.event-details {
+    flex: 1;
+    margin-right: 40px; /* Space between text and image */
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 1;
+}
+
+.event-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.event-location {
+    font-size: 18px;
+}
+
+.event-description {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Right Side: Event Actions */
+.event-actions {
+    flex: 0 0 300px;
+    text-align: right;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 1;
+}
+
+.event-datetime {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.calendar-btn,
+.book-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #7848F4;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.calendar-btn {
+    background-color: #ccc;
+}
+
+.book-btn:hover,
+.calendar-btn:hover {
+    background-color: #5e3dc4;
+}
+
+.program-promoter,
+.refund-policy {
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+/* Hero Image */
+.hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+

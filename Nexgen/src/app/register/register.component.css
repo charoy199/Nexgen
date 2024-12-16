@@ -1,0 +1,95 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.logo .highlight {
+  color: #7848F4;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav-links a:first-child {
+    color: #000; /* Black color for Login */
+  }
+  
+  .signup-btn {
+    padding: 8px 16px;
+    background-color: #7848F4;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+.si{
+    color: white;
+    
+  }
+  
+
+/* Main Content */
+.main-content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.registration-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration-form label {
+  width: 80%;
+  text-align: left;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.registration-form input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.submit-btn {
+  padding: 12px 30px;
+  background-color: #7848F4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #5b36c1;
+}

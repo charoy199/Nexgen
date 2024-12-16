@@ -1,0 +1,175 @@
+/* Overall container for the sign-in page */
+.signin-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Form container */
+.signin-form {
+    background: #F8F8FA;
+    padding: 40px;
+    width: 60%; /* Changed to 60% width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Title and headings */
+.signin-form h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #7848F4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signin-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Label styling (move the label slightly to the right) */
+.signin-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    padding-left: 85px; /* Increased the padding to move label to the right */
+}
+
+/* Input styling */
+.signin-form input {
+    width: 80%; /* Adjust the width to make it smaller */
+    padding: 10px;
+    margin: 0 auto 40px auto; /* Center the input and add margin below */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    display: block; /* Ensure it's a block element to allow centering */
+}
+
+/* Forgot password text styling */
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    font-size: 12px;
+    color: #7848F4;
+    text-decoration: none;
+}
+
+/* Sign In button styling */
+.signin-btn {
+    width: 400px; /* Set the width to auto so that the button shrinks to fit its content */
+    padding: 12px 30px; /* Adjust the padding to control the button's size */
+    background-color: #7848F4;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto; /* This centers the button horizontally */
+    display: block; /* Ensure it's a block element for the centering to work */
+}
+
+/* Separator text */
+.or-separator {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.or-separator span {
+    color: #888;
+}
+
+/* Google sign-in button styling (reduce width, remove background color) */
+/* Google sign-in button styling */
+.google-signin-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px; /* Reduced the width */
+    padding: 12px;
+    color: #333;
+    background-color: white; /* Set the background color to white */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto; /* This centers the button horizontally */
+}
+
+/* Google icon styling */
+.google-signin-btn .google-icon {
+    font-size: 20px; /* Adjust the size of the icon */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Styling for the image background section */
+.signin-image {
+    width: 40%; /* Changed to 40% width */
+    background-image: url('/assets/signin.png'); /* Corrected path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Dark overlay added to the image */
+.signin-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay with 60% opacity */
+    z-index: 1; /* Ensure overlay is above the image but below other content */
+}
+
+/* Overlay content */
+.signin-overlay {
+    text-align: center;
+    color: white;
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0); /* Removed dark overlay */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Heading in the overlay */
+.signin-overlay h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Paragraph in the overlay */
+.signin-overlay p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Button in the overlay (transparent background with reduced opacity) */
+.signin-overlay button {
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.3); /* Further reduced opacity of the background color */
+    color: rgb(255, 255, 255); /* Default text color is white */
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for the button */
+.signin-overlay button:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly increase opacity on hover */
+    color: black; /* Change text color to black on hover */
+}
